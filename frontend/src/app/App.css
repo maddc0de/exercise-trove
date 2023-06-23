@@ -82,11 +82,6 @@ body {
   transform: scale(1.1, 1.1);
 }
 
-.search-btn:hover {
-  color: #FF2625 !important;
-  border: 1px solid #FF2625 !important;
-}
-
 .exercise-video {
   display: flex;
   flex-direction: column;
@@ -110,10 +105,6 @@ body {
   .left-arrow,
   .right-arrow {
     position: static !important;
-  }
-
-  .hero-banner-img {
-    display: none;
   }
 
   .exercise-card {
