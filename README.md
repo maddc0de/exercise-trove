@@ -46,3 +46,4 @@ This project is based on [JavaScript Mastery's tutorial](https://www.youtube.com
 ## Resources
 - [React documentation](https://reactjs.org/)
 - [MUI Material UI documentation](https://mui.com/material-ui/)
+- [ExerciseDB from RapidAPI](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel)
