@@ -10,9 +10,9 @@ body {
 
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0px;
-}
+} */
 
 .right-arrow,
 .left-arrow {
@@ -72,13 +72,9 @@ body {
   height: 326px;
 }
 
-.bodyPart-card {
-  transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
-}
 
-.exercise-card:hover,
-.bodyPart-card:hover {
+
+.exercise-card:hover {
   transform: scale(1.1, 1.1);
 }
 
