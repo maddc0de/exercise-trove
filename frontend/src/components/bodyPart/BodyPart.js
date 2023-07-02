@@ -4,7 +4,7 @@ import Icon from '../../assets/icons/gym.png'
 import './BodyPart.css';
 
 const BodyPart = ({ item, bodyPart, setBodyPart }) => {
-  console.log(bodyPart)
+  console.log(bodyPart) // bodyPart: "upper legs", equipment: "band", gifUrl: "https://edbv2-ff7foj6vca-uc.a.run.app/image/PVbMcYks7OxkPZ", id: "1009", name: "band stiff leg deadlift", target: "glutes"
   return (
     <Stack
       type="button"
