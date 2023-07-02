@@ -9,15 +9,15 @@ const ExerciseCard = ({ exercise }) => {
     <Link className="exercise-card" to={`/exercises/${exercise.id}`}>
       <img src={exercise.gifUrl} alt={exercise.name} loading="lazy"/>
       <Stack direction="row">
-        <Button className="tag" sx={{ background: '#ffa9a9' }}>
+        <Button className="tag" sx={{ ml: '21px', color: '#fff', background: '#FFA9A9', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
           {exercise.bodyPart}
         </Button>
 
-        <Button className="tag" sx={{ background: '#fcc757' }}>
+        <Button sx={{ ml: '21px', color: '#fff', background: '#FCC757', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
           {exercise.target}
         </Button>
       </Stack>
-      <Typography className="exercise-card-name">
+      <Typography className="exercise-card-name" fontWeight="bold" sx={{ fontSize: { lg: '24px', xs: '20px' } }}>
         {exercise.name}
       </Typography>
     </Link>
