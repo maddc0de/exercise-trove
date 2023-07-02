@@ -3,8 +3,7 @@ import { Stack, Typography } from '@mui/material'
 import Icon from '../../assets/icons/gym.png'
 import './BodyPart.css';
 
-const BodyPart = ({ item, bodyPart, setBodyPart }) => {
-  console.log(bodyPart) // bodyPart: "upper legs", equipment: "band", gifUrl: "https://edbv2-ff7foj6vca-uc.a.run.app/image/PVbMcYks7OxkPZ", id: "1009", name: "band stiff leg deadlift", target: "glutes"
+const BodyPart = ({ part, bodyPart, setBodyPart }) => {
   return (
     <Stack
       type="button"
@@ -12,7 +11,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
       justifyContent="center"
       className="bodyPart-card"
       sx={{
-        borderTop: bodyPart === item ? '4px solid #ff2625' : '',
+        borderTop: bodyPart === part ? '4px solid #ff2625' : '',
         background: '#fff',
         borderBottomLeftRadius: '20px',
         width: '270px',
@@ -21,13 +20,13 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
         gap: '47px'
       }}
       onClick={() => {
-        setBodyPart(item);
+        setBodyPart(part);
         window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });  // built in browser API
       }}
     >
       <img src={Icon} alt="dumbbell" style={{ width: '40px', height: '40px'}} />
       <Typography fontSize={"24px"} fontWeight="bold" color="#3A1212" textTransform="capitalize">
-        {item}
+        {part}
       </Typography>
     </Stack>
   )
