@@ -20,3 +20,21 @@
 .exercise-card:hover {
   transform: scale(1.1, 1.1);
 }
+
+.exercise-card-name {
+  margin-left: 21px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 11px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.tag {
+  margin-left: 21px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
