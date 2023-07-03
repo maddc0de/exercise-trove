@@ -10,11 +10,6 @@ body {
 
 }
 
-.detail-image {
-  width: 729px;
-  height: 742px;
-}
-
 .exercise-video {
   display: flex;
   flex-direction: column;
