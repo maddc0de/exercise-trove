@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 
 import BodyPart from '../bodyPart/BodyPart';
+import ExerciseCard from '../exerciseCard/ExerciseCard';
 import RightArrowIcon from '../../assets/icons/right-arrow.png';
 import LeftArrowIcon from '../../assets/icons/left-arrow.png';
 import './HorizontalScrollBar.css';
@@ -27,16 +28,19 @@ const RightArrow = () => {
   );
 };
 
-const HorizontalScrollBar = ({ bodyPartsList, bodyPart, setBodyPart }) => {
+const HorizontalScrollBar = ({ data, bodyPart, setBodyPart, bodyParts }) => {
+  console.log(`PRINT THIS ${bodyParts}`);
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-      {bodyPartsList.map( part => (
+      {data.map( part => (
         <Box key={part.id || part}
              partId={part.id || part}
              title={part.id || part}
              m="0 40px"
         >
-          <BodyPart part={part} boydPart={bodyPart} setBodyPart={setBodyPart} />
+          {bodyParts? <BodyPart part={part} boydPart={bodyPart} setBodyPart={setBodyPart} />
+            : <ExerciseCard exercise={part}/>
+          }
         </Box>
       ))}
     </ScrollMenu>
