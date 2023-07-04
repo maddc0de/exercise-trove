@@ -1,41 +1,76 @@
 # Workout App
 
-## Available Scripts
+check out the website [here](https://workout-md.netlify.app/)🏋️
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+This is a workout app project that was developed following the JavaScript Mastery tutorial. The purpose of this project is to learn and improve my knowledge of React while catering to a genuine interest and hobby in exercising.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The workout app utilises APIs to access and display a wide range of exercises.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Access a vast collection of exercises through API integration
+- More information about an exercise, including target muscle and body part
+- Animated GIFs demonstrating the proper execution of exercises
+- Information on basic equipment required for each exercise
+- Explore similar YouTube videos related to specific exercises
+- Discover alternative exercises that target the same muscle groups
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to run the project
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before running the project, ensure that you have installed `npm` and `node` in your local machine. If they are not installed, please follow the steps below.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```bash
+  npm install npm@latest -g
+  npm -v
+  ```
 
-### `npm run eject`
+- nvm & node
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ```bash
+  brew install nvm
+  nvm install node
+  node -v
+  ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/maddc0de/workout-app.git
+   ```
+
+2. Install NPM packages
+
+   ```bash
+   cd workout-app
+
+   cd api
+   npm install
+   ```
+
+3. Run the project
+
+   ```bash
+   npm start
+   ```
+
+  Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  The page will reload when you make changes. You may also see any lint errors in the console.
+
+## Future Developments
+
+- Implement user authentication to save and track personal workout routines
+- Add a workout planner feature to create customized exercise schedules
+- Integrate a progress tracker to record and monitor fitness achievements
+- Expand exercise database with additional workout variations and categories
+- Incorporate workout timers and reminders for effective training sessions
 
 ## Sources
 
@@ -43,7 +78,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project is based on [JavaScript Mastery's tutorial](https://www.youtube.com/watch?v=KBpoBc98BwM).
 
-## Resources
+## Other Resources
 - [React documentation](https://reactjs.org/)
 - [MUI Material UI documentation](https://mui.com/material-ui/)
-- [ExerciseDB from RapidAPI](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel)
+- [ExerciseDB API](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb)
+- [Youtube Search and Download API](https://rapidapi.com/h0p3rwe/api/youtube-search-and-download/)
+- [Infinity Spin loader](https://mhnpd.github.io/react-loader-spinner/docs/components/infinity-spin/)
