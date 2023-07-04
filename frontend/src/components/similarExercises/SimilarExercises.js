@@ -5,7 +5,7 @@ import HorizontalScrollBar from '../horizontalScrollBar/HorizontalScrollBar';
 const SimilarExercises = ({ targetMuscleExercises }) => {
   return (
     <Box sx={{ mt: { lg: '100px' }}} >
-      <Typography variant="h3">
+      <Typography variant="h3" mb={5}>
          Exercises that targets similar muscle group
       </Typography>
       <Stack direction="row">
