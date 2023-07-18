@@ -5,12 +5,17 @@
   width: 700px;
   height: 900px;
   margin-top: -330px;
-
+  z-index: -1;
 }
 
 @media screen and (max-width:1200px) {
   .banner-img {
     display: none;
   }
+}
 
+@media screen and (max-width:1400px) {
+  .spark {
+    display: none;
+  }
 }
