@@ -1,35 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 
 import HorizontalScrollBar from '../horizontalScrollBar/HorizontalScrollBar';
 import './SearchExercises.css';
 
 import { exerciseOptions, fetchData } from '../../utils/fetchData'
+import { bodyPartsData } from '../../utils/information';
 
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const [search, setSearch] = useState('')
-  const [bodyParts, setBodyParts] = useState([])
-
-  useEffect(() => {
-    const fetchExercisesData = async () => {
-      const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
-
-      setBodyParts(['all', ...bodyPartsData])
-    }
-    fetchExercisesData()
-  }, [])
-  
+  const bodyParts = [...bodyPartsData]
 
   const handleSearch = async () => {
     if(search) {
       const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+      console.log(`searched exercise data ${exerciseData}`)
       const searchedExercises = exerciseData.filter( 
         exercise => ( exercise.name.toLowerCase().includes(search)
         || exercise.target.toLowerCase().includes(search)
         || exercise.equipment.toLowerCase().includes(search)
         || exercise.bodyPart.toLowerCase().includes(search)
       ));
-      console.log(`this is from SearchedExercises' exercise: ${searchedExercises}`)
       setSearch('');
       setExercises(searchedExercises);
     }
@@ -38,8 +29,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography fontWeight="700" sx={{fontSize: { lg: '44px', xs: '30px' }}} mb="50px" textAlign="center">
-        Awesome Exercises You <br />
-        Should Know
+        Discover a variety of exercises <br />
+        that suit your needs.
       </Typography>
       <Box position="relative" mb="72px">
         <TextField 
