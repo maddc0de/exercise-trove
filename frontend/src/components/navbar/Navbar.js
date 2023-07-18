@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Stack direction="row"
     justifyContent="space-around" 
-    sx={{ gap: { sm: '122px', xs: '40px'}, 
+    sx={{ gap: { sm: '50px', xs: '40px'}, 
           mt: { sm: '32px', xs: '20px'}, 
           justifyContent: 'none', 
           px: '20px'}}
@@ -24,7 +24,7 @@ const Navbar = () => {
         alignItems="flex-end"
       >
         <Link to="/" className="homeLink">Home</Link>
-        <a href="#exercises" className="exercisesLink">Exercises</a>
+        <a href="#exercises" className="exerciseLink">Exercises</a>
       </Stack>
     </Stack>
   )

@@ -5,14 +5,12 @@
   margin: 0 20px;
 }
 
-.homeLink {
+.homeLink, .exerciseLink {
   text-decoration: none;
   color: #3A1212;
-  border-bottom: 3px solid #FF2625
+  
 }
 
-/* style={{ textDecoration: 'none', color: '#3A1212'} */
-.exerciseLink {
-  text-decoration: none;
-  color: #3A1212;
+.homeLink:hover, .exerciseLink:hover {
+  border-bottom: 3px solid #FF2625;
 }
