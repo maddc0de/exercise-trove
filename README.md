@@ -1,12 +1,12 @@
-# Workout App
+# Exercise Trove
 
-check out the website [here](https://workout-md.netlify.app/)🏋️
+check out the website [here](https://exercisetrove.netlify.app/)🏋️
 
 ## Project Description
 
-This is a workout app project that was developed following the JavaScript Mastery tutorial. The purpose of this project is to learn and improve my knowledge of React while catering to a genuine interest and hobby in exercising.
+This is an exercise application that was developed with the guide of JavaScript Mastery tutorial. The purpose of this project is to learn and improve my knowledge of React while catering to a genuine interest and hobby in exercising.
 
-The workout app utilises APIs to access and display a wide range of exercises.
+This application utilises APIs to access and display a wide range of exercises.
 
 ## Features
 
@@ -76,9 +76,10 @@ Before running the project, ensure that you have installed `npm` and `node` in y
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is based on [JavaScript Mastery's tutorial](https://www.youtube.com/watch?v=KBpoBc98BwM).
+This project was guided by [JavaScript Mastery's tutorial](https://www.youtube.com/watch?v=KBpoBc98BwM).
 
 ## Other Resources
+
 - [React documentation](https://reactjs.org/)
 - [MUI Material UI documentation](https://mui.com/material-ui/)
 - [ExerciseDB API](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb)
