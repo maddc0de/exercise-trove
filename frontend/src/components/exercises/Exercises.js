@@ -64,6 +64,13 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           </Stack>
         </Box>
       )}
+      { typeof exercises === 'object' && Object.keys(exercises).length === 0 && (
+        <Stack justifyContent="center" p="40px">
+          <Typography variant="h4">sorry, we couldn't find any results.</Typography>
+          <Typography variant="h6" mt={2}>are you looking for exercises by body part? try choosing from the category above. </Typography>
+          <Typography variant="h6"mt={1}>If not, double check your search for any typos or spelling errors - or try a different search term. For example: "dumbbell"</Typography>
+        </Stack>
+      )}
     </>
   )
 }

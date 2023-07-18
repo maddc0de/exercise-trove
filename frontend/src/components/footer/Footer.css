@@ -1,0 +1,8 @@
+.username {
+  color: #FF2625;
+  text-decoration: none;
+}
+
+.username:hover {
+  border-bottom: 3px solid #FF2625;
+}
