@@ -40,7 +40,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             backgroundColor: '#fff'
           }}
           type="text"
-          placeholder="search exercises" 
+          placeholder="search by target muscles, equipment or exercise name" 
           height="76px"
           value={search}
           onChange={(e) => {setSearch(e.target.value.toLowerCase())}}  

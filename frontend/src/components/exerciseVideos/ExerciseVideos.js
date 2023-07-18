@@ -4,7 +4,6 @@ import { Box, Stack, Typography } from '@mui/material';
 import './ExerciseVideos.css'
 
 const ExerciseVideos = ({ exerciseVideos, name }) => {
-  console.log(`this is exercise video 1: ${exerciseVideos[1]}`)
   return (
     <Box sx={{ marginTop: {lg: '200px', xs: '20px'}}}>
       <Typography sx={{ fontSize: { lg: '44px', xs: '25px' } }} fontWeight={700} color="#000" mb="33px">
