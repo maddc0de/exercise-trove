@@ -1,6 +1,6 @@
 # Exercise Trove
 
-check out the website [here](https://exercisetrove.netlify.app/)🏋️
+check out the website [here](https://exercise-trove.vercel.app/)🏋️
 
 ## Project Description
 
